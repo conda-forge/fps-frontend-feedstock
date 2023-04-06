@@ -1,11 +1,11 @@
-About fps-frontend
-==================
+About fps-frontend-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-frontend-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/frontend
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-frontend-feedstock/blob/main/LICENSE.txt)
 
 Summary: An FPS plugin for the frontend related configuration
 
