@@ -9,8 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: An FPS plugin for the frontend related configuration
 
-Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/frontend
-
 Current build status
 ====================
 
