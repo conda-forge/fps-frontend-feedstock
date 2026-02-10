@@ -1,0 +1,43 @@
+schema_version: 1
+
+context:
+  version: "0.9.7"
+
+package:
+  name: fps-frontend
+  version: ${{ version }}
+
+source:
+  - url: https://pypi.org/packages/source/f/fps-frontend/fps_frontend-${{ version }}.tar.gz
+    sha256: 941fd543109b1f655d65e0c5b786d22b25b37abec9726c89d7ba11b2478ac46a
+
+build:
+  noarch: python
+  number: 0
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - uv-build
+  run:
+    - python >=${{ python_min }}
+    - jupyverse-api >=0.14.0,<0.15.0
+
+tests:
+  - python:
+      imports: fps_frontend
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  license: BSD-3-Clause
+  license_file: COPYING.md
+  homepage: https://github.com/jupyter-server/jupyverse/tree/main/plugins/frontend
+  summary: An FPS plugin for the frontend related configuration
+
+extra:
+  recipe-maintainers:
+    - davidbrochart
