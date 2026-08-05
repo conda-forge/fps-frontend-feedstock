@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.1"
+  version: "0.10.2"
 
 package:
   name: fps-frontend
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-frontend/fps_frontend-${{ version }}.tar.gz
-    sha256: 0ec271cb3c6659f70134c13aa58c61319f07af06207e809eda92d464caf173f8
+    sha256: 80050f3156a4a37f2ae320f6cc60918eb57d821db3b3c0918c5ede229f4e9e2b
 
 build:
   noarch: python
